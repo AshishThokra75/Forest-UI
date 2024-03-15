@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forestw3</title>
+    <link rel="shortcut icon" href="./forest1.jpg" type="image/x-icon">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .main{
+            background-image: url(./backgroung.jpg); 
+            width: 100%;
+            height: 100vh;
+            background-repeat: no-repeat ;
+            background-size: cover;
+        }
+        .logos{
+            margin-left: 60px;
+            margin-top: 17px;
+            font-size: 45px;
+            /* font-family: Arial, Helvetica, sans-serif; */
+           
+            
+            /* border: 10px solid red; */
+        }
+        .logos a{
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+        } 
+        .container1{
+            display: flex;
+            justify-content: space-between;
+            background-color: transparent;
+            align-items: center;
+        }
+        .nav-bar{
+            display: flex;
+            font-size: 18px;
+            font-weight: 500;
+            color: white;
+            font-weight: 500;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-top: 19px;
+            /* border: 1px solid red; */
+            margin-right: 53px;
+            cursor: pointer;
+        }
+        li{
+            list-style: none;
+            padding: 23px;
+        }
+        .content{
+            margin: 15%;
+            /* border: 1px solid red; */
+            color: white;
+            text-align: center;
+        }
+        .content h4{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .b1,.b2{
+            height: 43px;
+            width: 100px;
+            border-radius: 27px;
+            font-size: 15px;
+            text-align: center;
+            margin-top: 50px;
+            border: 2px solid white;
+        }
+        .b1{
+            color: #a3c962;
+            background-color: white;
+        }
+        .b2{
+            background-color: #a3c962;
+            color: white;
+        }
+        .b1:hover {
+            background-color: black;
+            color: white;
+            transition: 0.7s;
+        }
+        .b2:hover {
+            background-color: black;
+            transition: 0.7s;
+        }
+        .nav-bar li:hover{
+            color: #a3c962;
+            transition: 0.8s;
+        }
+        .sticky-side{
+            height: 300px; 
+            width: 89px; 
+            position: fixed; 
+            top: 69px;
+            right: 0;
+            border: 1px solid rgb(68, 67, 67);
+            background-color: #212529;
+            border-top-left-radius: 7px;
+            border-bottom-left-radius: 7px;
+            /* border: 1px solid red; */
+        }
+        .sb1,.sb2,.sb3,.sb4{
+            height: 70px;
+            width: 100%;
+            color: rgb(83, 80, 80);
+            background-color: transparent;
+            /* padding-left: 10px; */
+            font-size: 12px;
+            font-weight: 900;
+            border-top-left-radius: 35px;
+            border: 1px solid transparent;
+            align-content: center;
+            cursor: pointer;
+        }
+        .sticky-side button:hover {
+            color:white;
+            transition: 0.7s;
+        }
+        .main1{
+            height: 100vh;
+            width: 100%;
+            background-color: white;
+        }
+        .main1content1{
+            margin-top: 75px;
+            /* border: 1px solid red; */
+            text-align: center;
+
+        }
+        .main1content1 h2{
+            color: #a3c962;
+            font-size: 20px;
+            
+        }
+        .main1content1 h1{
+            font-family: serif ;
+            margin-top: 7px;
+            font-size: 26px;
+        }
+        .main1content1 .p1{
+            margin-top: 29px;
+            color: gray;
+
+        } 
+        .main1 .poster{
+            /* border: 1px solid red; */
+            height: 455px;
+            width: 310px;
+            margin-left: 283px;
+            margin-top: 65px;
+            
+        }
+        .poster img{
+            height: 100%;
+            width: 395px;
+            position: relative;
+        }
+        /* .main1{
+            display: flex;
+        } */
+        .postabt{
+            /* border: 2px solid blue; */
+            display: flex;
+            
+        }
+        .about-us{
+            /* border: 1px solid red; */
+            height: 455px;
+            margin-left: 170px ;
+            margin-top: 65px;
+            padding-right: 100px;
+            
+
+        }
+        .about-us .a1{
+            /* border: 1px solid red; */
+            padding-right: 275px;
+            font-size: 25px;
+            font-family: serif;
+            margin-top: 3px;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+        .about-us .a2{
+            color: gray;
+            font-size: 15px;
+            letter-spacing: 1px;
+            padding-right: 100px;
+            /* border: 1px solid black; */
+
+        }
+        .about-us .a{
+            letter-spacing: 1px;
+            color: #a3c962;
+            font-size: 20px;
+            font-weight: 600;
+            position: relative;
+        }
+        .circle{
+            width: 700px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            padding: 10px;
+            /* border: 1px solid red; */
+            position: absolute;
+            margin-top: 30px;
+            
+        }
+        .circle .box1,.box2,.box3{
+            /* text-align: center; */
+            height: 180px;
+            width: 180px;
+            border-radius: 100%;
+            padding: 70px;
+            
+            
+        }
+        .box1{
+            /* outline: 5px solid blue; */
+            border: 5px solid blue;
+            background-color:transparent;
+        }
+        .box2{
+            border: 5px solid green;
+            background-color: transparent;
+        }
+        .box3{
+            border: 5px solid orange;
+            background-color: transparent;
+        }
+        /* .circle h4{
+            border: 1px solid #ff0000;
+            margin-top: 100px;
+            width: 100px;
+        } */
+        /* .caption{
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            top: 225px;
+            right: 7px;
+            border: 1px solid blue;
+            width: 700px;
+        } */
+        .box1 .h1{
+            width: 100px;
+            /* border: 1px solid yellow; */
+            position: absolute;
+            bottom: -20px;
+            left: 55px;
+        }
+        .box2 .h2{
+            width: 100px;
+            /* border: 1px solid yellow; */
+            position: absolute;
+            bottom: -20px;
+            left: 299px;
+        }
+        .box3 .h3{
+            width: 100px;
+            /* border: 1px solid yellow; */
+            position: absolute;
+            bottom: -20px;
+            left: 555px;
+        }
+        .main1content1 h2{
+            word-spacing: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sticky-side">
+        <button class="sb1">&gt;&gt;</button>
+        <hr>
+        <button class="sb2">Back</button>
+        <button class="sb3">Download</button>
+        <button class="sb4">Buy</button>
+
+    </div>  
+    <div class="main">
+        <div class="container1">
+            <h1 class="logos"> <a href="./forestw3.html">Forest</a> </h1>
+            <ul class="nav-bar">
+                <li style="color:#a3c962 ;">Home</li>
+                <li>About</li>
+                <li>Service</li>
+                <li>Gallery</li>
+                <li>Team</li>
+                <li>Contact</li>
+            </ul>
+            
+        </div>
+        <div class="content">
+            <h4 style="font-size: 35px;">Global Warming</h4>
+            <h5 style="font-size: 35px; font-family: 'Times New Roman', Times, serif;">Save Forest And Save Earth</h5>
+            <p style="font-size: 20px; font-family: 'Times New Roman', Times, serif;">Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt utadipiscing elit sed do eiusmod tempor incididunt Lorem</p>
+            <button class="b1">About Us</button>
+            <button class="b2">Join Us</button>
+        </div>
+    </div>
+    <div class="main1">
+        <div class="main1content1">
+            <h2>What we do</h2>
+            <h1>STANDING TOGETHER FOR A BETTER WORLD</h1>
+            <pre class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                Lorem ipsum dolor sit amet, consectetur</pre>
+        </div>
+        <div class="postabt">
+        <div class="poster">
+            <img src="https://as1.ftcdn.net/v2/jpg/02/84/48/00/500_F_284480003_6EZrLh6ju1IZCF27vnYbO87ZQq0j1NKx.jpg" alt="Leaves..">
+        </div>
+            <div class="about-us">
+                <h3 class="a">About Us</h3>
+                <p class="a1">
+                we cannot fail in our mission to 
+                save a living palnet
+                </p>
+                <P class="a2">
+                delectus reiciendis maiores alias consequatur aut.maiores alias Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod delectus reiciendis maiores alias consequatur aut.maiores alias Lorem ipsum dolor sit amet, consectetur
+                </P>
+                <div class="circle">
+                    <div class="box1">90% 
+                        <h4 class="h1">Save Plants</h4>
+                    </div>
+                    
+                    <div class="box2">80%  
+                        <h4 class="h2">Planting</h4>
+                    </div>
+                    
+                    <div class="box3">75% 
+                        <h4 class="h3">Save Tress</h4>
+                    </div>
+                </div>
+                <!-- <div class="caption">
+                   
+                    
+                    
+                </div> -->
+            </div>
+            
+        </div><!--postersbt-->
+        
+    </div>
+    
+</body>
+</html>
